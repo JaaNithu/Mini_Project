@@ -1,0 +1,210 @@
+body {
+  margin: 0px;
+  width: 1600px;
+  background-image: url(imgs/img1.jpg);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sect-1 .navbar {
+  padding: 1em;
+  background-color: #f2f2f2;
+}
+.sect-1 .navbar .home .logo {
+  text-decoration: none;
+  font-size: 3em;
+  font-family: Verdana;
+  padding-left: 43%;
+  padding-right: 30%;
+  font-weight: bold;
+  color: #36007c;
+}
+.sect-1 .navbar .home .logo span {
+  color: blue;
+}
+.sect-1 .navbar .home #contact {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  border: 1px solid;
+  font-weight: bold;
+  background: blue;
+  padding: 0.4em 1em;
+  border-radius: 5em;
+}
+.sect-1 .navbar .home .navig-icon:hover {
+  color: blue;
+  background: white;
+  transition: 0.3s;
+}
+.sect-1 .navbar .navigation ul {
+  list-style-type: none;
+  margin: 1em;
+  padding-top: 1em;
+  text-align: center;
+}
+.sect-1 .navbar .navigation ul li {
+  display: inline;
+}
+.sect-1 .navbar .navigation ul a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 16px 25px;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+.sect-1 .navbar .navigation ul #current {
+  text-shadow: 0px 0px 20px blue;
+}
+.sect-1 .navbar .navigation ul a:hover {
+  color: blue;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sect-2 .head {
+  color: gold;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.sect-2 .container1 {
+  border: 1px transparent;
+  width: 1560px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+}
+.sect-2 .container1 .box1 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+}
+.sect-2 .container1 .box1 img {
+  width: 735px;
+  height: 340px;
+  position: absolute;
+  border: 3px solid;
+  border-style: outset;
+  border-color: gold;
+}
+.sect-2 .container1 .box2 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+  left: 765px;
+}
+.sect-2 .container1 .box2 p {
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 200;
+  position: absolute;
+}
+.sect-2 .container1 .box2 p span {
+  color: gold;
+  font-weight: bold;
+  font-size: 30px;
+}
+.sect-2 .container2 {
+  border: 1px transparent;
+  width: 1560px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+}
+.sect-2 .container2 .box1 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+  left: 765px;
+}
+.sect-2 .container2 .box1 img {
+  width: 735px;
+  height: 340px;
+  position: absolute;
+  border: 3px solid;
+  border-style: outset;
+  border-color: gold;
+}
+.sect-2 .container2 .box2 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+}
+.sect-2 .container2 .box2 p {
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 200;
+  position: absolute;
+}
+.sect-2 .container2 .box2 p span {
+  color: gold;
+  font-weight: bold;
+  font-size: 30px;
+}
+.sect-2 .container3 {
+  border: 1px transparent;
+  width: 1560px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+}
+.sect-2 .container3 .box1 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+}
+.sect-2 .container3 .box1 img {
+  width: 735px;
+  height: 340px;
+  position: absolute;
+  border: 3px solid;
+  border-style: outset;
+  border-color: gold;
+}
+.sect-2 .container3 .box2 {
+  border: 1px transparent;
+  width: 735px;
+  height: 340px;
+  margin: 30px;
+  position: absolute;
+  left: 765px;
+}
+.sect-2 .container3 .box2 p {
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 200;
+  position: absolute;
+}
+.sect-2 .container3 .box2 p span {
+  color: gold;
+  font-weight: bold;
+  font-size: 30px;
+}/*# sourceMappingURL=Services.css.map */

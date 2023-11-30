@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <section class="sect-1"> 
+        <div class="navbar">
+            <div class="home">
+                <a class="logo" href="Home page.html">Litro<span>Gas</span></a>
+                <a href="tel:1311" class="navig-icon" id="contact">1311</a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="Home page.html" class="navig-icon">HOME</a></li>
+                    <li><a href="about.html" class="navig-icon">ABOUT US</a></li>
+                    <li><a href="Services.html" class="navig-icon">SERVICES</a></li>
+                    <li><a href="contact.html" class="navig-icon" id="current">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Form-->
+    <section class="sect-2">
+        <div class="head">
+            <p>Contact Us</p>
+        </div>
+        <div class="container">
+            <div class="row">    
+                <div class="column">
+                    
+                  <form action="/action_page.php">
+                      <h1 class="head">Contact Details</h1>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Your E-mail..">
+            <!--Dropdown for selecting district-->
+                    <label for="province">Province</label>
+                    <select id="province" name="province">
+                      <option value="Northern">Northern</option>
+                      <option value="canada">Eastern</option>
+                      <option value="usa">Western</option>
+                      <option value="usa">Southern</option>
+                      <option value="usa">Central</option>
+                      <option value="usa">North Western</option>
+                      <option value="usa">North Central</option>
+                      <option value="usa">Uva</option>
+                      <option value="usa">Sabaragamuwa</option>
+                    </select>
+
+                    <label for="subject">Comment</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Map-->
+    <section class="sect-3">
+
+        <div class="workingHrs">
+            <div class="day">
+                <p>* Monday</p>
+                <p>* Tuesday</p>
+                <p>* Wednesday</p>
+                <p>* Thursday</p>
+                <p>* Friday</p>
+                <p>* Satarday</p>
+                <p>* Sunday</p>
+            </div>
+    
+            <div class="time">
+                <p>: 09:00 - 18:00</p>
+                <p>: 09:00 - 18:00</p>
+                <p>: 09:00 - 18:00</p>
+                <p>: 09:00 - 18:00</p>
+                <p>: 09:00 - 18:00</p>
+                <p>: 09:00 - 18:00</p>
+                <p class="closed">: Closed</p>
+            </div>
+        </div>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.748243404205!2d79.85531731516073!3d6.92067102033769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25914a0a51669%3A0x2f1728b16ef01c4a!2sLitro%20Gas%20Lanka%20Ltd!5e0!3m2!1sen!2slk!4v1653928776820!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</body>
+</html>

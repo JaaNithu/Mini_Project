@@ -1,0 +1,531 @@
+body {
+  margin: 0px;
+  width: 604px 1865.810px;
+  background-image: url(imgs/img1.jpg);
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sect-1 .navbar {
+  padding: 1em;
+  background-color: #f2f2f2;
+  width: 1350px;
+  height: 180px;
+}
+
+.sect-1 .navbar .home .logo {
+  text-decoration: none;
+  left: 45%;
+  top: -50px;
+  font-size: 3em;
+  font-family: Verdana;
+  padding-left: 45%;
+  padding-right: 39%;
+  font-weight: bold;
+  color: #36007c;
+  margin: 40px 0;
+  position: relative;
+}
+
+.logo::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(102, 168, 233);
+  left: 10%;
+  transform: translateX(-25%);
+  animation: animate 3s linear infinite;
+  bottom: 0px;
+}
+
+@keyframes animate{
+  0%{
+      width: 100px;
+  }
+  50%{
+      width: 200px;
+  }
+  100%{
+      width: 100px;
+  }
+}
+
+.sect-1 .navbar .home .logo span {
+  color: blue;
+}
+
+
+.sect-1 .navbar .home .logo span::before{
+  margin: 40px 0;
+      animation: animate 3s linear infinite;
+  }
+  
+  
+  @keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+  }
+
+.sect-1 .navbar .home #contact {
+  text-decoration: none;
+  left: 400px;
+  top: -25px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  border: 1px solid;
+  font-weight: bold;
+  background: blue;
+  padding: .4em 1em;
+  border-radius: 5em;
+  margin: 40px 0;
+}
+
+
+.sect-1 .navbar .home #contact:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(4, 4, 88);
+}
+
+.sect-1 .navbar .home .navig-icon:hover {
+  color: blue;
+  background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.navigation{
+  margin: -20px auto;
+  max-width: 700px;
+}
+
+.sect-1 .navbar .navigation ul {
+  display: flex;
+  justify-content: center;
+}
+
+
+.sect-1 .navbar .navigation ul li {
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+}
+
+.sect-1 .navbar .navigation ul a {
+  text-decoration: none;
+  color: #007bff;
+  text-align: center;
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+.sect-1 .navbar .navigation ul #current,
+.sect-1 .navbar .navigation ul a:hover {
+  color: #fff;
+  background: #007bff;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sect-2 .container1 {
+  border: transparent;
+  width: 1000px;
+  height: 250px;
+  margin-left: 200px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.sect-2 .container1 p {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.sect-2 .container1 p span {
+  border: transparent;
+  width: 100px;
+  height: 50px;
+  color: gold;
+  font-size: 60px;
+  font-family: none;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.sect-3 .container1{
+  margin-top: 300px;
+  margin-left: 100px;
+  width: 1000px;
+  height: 550px;
+
+}
+
+.sect-3 .container1 img{
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px lightgray;
+  cursor: pointer;
+}
+
+.sect-3 .container1 .imgs1{
+  margin-left: -30px;
+  width: 400px;
+  height: 300px;
+}
+
+.sect-3 .container1 .imgs2{
+  margin-left: 600px;
+  margin-top: -300px;
+  width: 400px;
+  height: 300px;
+}
+
+.sect-3 .container1 .imgs1::before{
+  content: "Ashoka Bandara "  
+           "Board Director";
+      position: absolute;
+      top: 900px;
+      left: 200px;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+      text-shadow: 3px 3px 3px black;
+      font-weight: bold;
+      width: 200px;
+      margin-top: 280px;
+      opacity: 0;
+      transition: .3s;
+      transition-delay: .2s;
+      z-index: 1;
+}
+
+.sect-3 .container1 .imgs1:after{
+  content: "";
+    position: absolute;
+    width: 605px;
+  height: 0;
+    bottom: 646px;
+    left: 70px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.4);
+    transition: .3s;
+}
+
+.sect-3 .container1 .imgs1:hover::after{
+  height: 457px;
+  
+}
+
+.sect-3 .container1 .imgs1:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+
+.sect-3 .container1 .imgs2::before{
+  content: "Shanthi Kumar "
+          "Board Director";
+      position: absolute;
+      top: 900px;
+      left: 1220px;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+      text-shadow: 3px 3px 3px black;
+      font-weight: bold;
+      width: 200px;
+      margin-top: 280px;
+      opacity: 0;
+      transition: .3s;
+      transition-delay: .2s;
+      z-index: 1;
+}
+
+.sect-3 .container1 .imgs2:after{
+  content: "";
+    position: absolute;
+    width: 605px;
+  height: 0;
+    bottom: 646px;
+    left: 700px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.4);
+    transition: .3s;
+}
+
+.sect-3 .container1 .imgs2:hover::after{
+  height: 457px;
+  
+}
+
+.sect-3 .container1 .imgs2:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sect-3 .container2 .box1{
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.sect-3 .container2 .box1 img{
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px lightgray;
+  cursor: pointer;
+}
+
+.sect-3 .container2 .box1 .imges3{
+  margin-left: -80px;
+  width: 400px;
+  height: 300px;
+}
+
+.container2 .box1 .imges3::before{
+  content: "Janaka Pathirana "
+            "Marketing Direct";
+            position: absolute;
+            top: 1450px;
+            left: 340px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box1 .imges3:hover::after{
+  height: 320px;
+}
+
+.container2 .box1 .imges3:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+
+
+.sect-3 .container2 .box1 .imges4{
+  margin-left: 366px;
+  margin-top: -300px;
+  width: 100px;
+  height: 100px;
+}
+
+.container2 .box1 .imges4::before{
+  content: "Mignon Wijeyasuriya "
+            "Director Spec. Project";
+            position: absolute;
+            top: 1450px;
+            left: 820px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box1 .imges4:hover::after{
+  height: 322px;
+}
+
+.container2 .box1 .imges4:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sect-3 .container2 .box1 .imges5{
+  margin-left: 810px;
+  margin-top: -100px;
+  width: 50px;
+  height: 50px;
+}
+
+.container2 .box1 .imges5::before{
+  content: "Wick. Kamalanatha "
+            "Operational Director";
+            position: absolute;
+            top: 1450px;
+            left: 1275px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box1 .imges5:hover::after{
+  height: 320px;
+}
+
+.container2 .box1 .imges5:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sect-3 .container2 .box2 img{
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px lightgray;
+  cursor: pointer;
+}
+
+.sect-3 .container2 .box2 .imges6{
+  margin-left: 23px;
+  width: 2px;
+  height: 1px;
+}
+
+.container2 .box2 .imges6::before{
+  content: "Jayantha  "
+           " Director HSE";
+            position: absolute;
+            top:1800px;
+            left: 150px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box2 .imges6:hover::after{
+  height: 321px;
+}
+
+.container2 .box2 .imges6:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sect-3 .container2 .box2 .imges7{
+  margin-top: -500;
+  margin-left: 470px;
+  width: 800px;
+  height: 600px;
+}
+
+.container2 .box2 .imges7::before{
+  content: "Lakmali "
+           "Financial Director";
+            position: absolute;
+            top:1800px;
+            left: 600px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box2 .imges7:hover::after{
+  height: 321px;
+}
+
+.container2 .box2 .imges7:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sect-3 .container2 .box2 .imges8{
+  margin-top: -600px;
+  margin-left: 916px;
+  width: 200px;
+  height: 100px;
+}
+
+.container2 .box2 .imges8::before{
+  content: "Mudith Thamanagama "
+            "Director HRM";
+            position: absolute;
+            top:1800px;
+            left: 1050px;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            text-shadow: 3px 3px 3px rgb(31, 145, 194);
+            font-weight: bold;
+            width: 200px;
+            margin-top: 150px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+}
+
+
+.container2 .box2 .imges8:hover::after{
+  height: 321px;
+}
+
+.container2 .box2 .imges8:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+

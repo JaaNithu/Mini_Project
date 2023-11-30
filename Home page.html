@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home page.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+<!--Navigation Bar-->
+    <section class="sect-1"> 
+        <div class="navbar">
+            <div class="home">
+                <a class="logo" href="Home page.html">Litro<span>Gas</span></a>
+                <a href="tel:1311" class="navig-icon" id="contact">1311</a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="Home page.html" class="navig-icon" id="current">HOME</a></li>
+                    <li><a href="about.html" class="navig-icon">ABOUT US</a></li>
+                    <li><a href="Services.html" class="navig-icon">SERVICES</a></li>
+                    <li><a href="contact.html" class="navig-icon">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!--Description Texts-->
+    <section class="sect-2"> 
+        <h1 class="description-heading">
+            your trusted energy partner
+        </h1>
+
+        <div class="descriptions">
+            <ul class="description1">
+                <li id="d11">+14,000 <br> Dealer Networks</li>
+                <li id="d12">+42 <br> Distributors</li>
+                
+            </ul>
+
+            <ul class="description2">
+                <li id="d21">+1,500 <br> Home Delivery Hubs</li>
+                <li id="d22">+4 <br> Million Customers</li>
+                
+            </ul>
+        </div>
+    </section>
+
+
+<!--Image Gallery with number text-->
+    <section class="sect-3"> 
+        <div class="container">
+            <div class="imgs">
+
+                <div class="mySlides">
+                  <div class="text">Production</div>
+                  <img class="image" src="imgs/gallery-production.jpg" style="width:900px" height="500px">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="text">Store</div> 
+                  <img class="image" src="imgs/gallery-2.jpg" style="width:900px" height="500px">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="text">Fuel Tanks</div>
+                  <img class="image" src="imgs/gallery-tanks.jpg" style="width:900px" height="500px">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="text">Fuel Station</div>
+                  <img class="image" src="imgs/gallery-fuel.jpg" style="width:900px" height="500px">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="text">Senior Staffs</div>
+                  <img class="image" src="imgs/gallery-staffs.jpg" style="width:900px" height="500px">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="text">Distribution</div>
+                  <img class="image" src="imgs/gallery-distribution.jpg" style="width:900px" height="500px">
+            </div>
+          
+<!-- Next and previous buttons -->           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+<!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+<!-- Thumbnail images -->
+            <div class="row">s
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-production.jpg" style="width:200px;" height="125px" onclick="currentSlide(1)" alt="1 / 6" id="imgs">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-2.jpg" style="width:200px" height="125px" onclick="currentSlide(2)" alt="2 / 6" id="imgs">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-tanks.jpg" style="width:200px" height="125px" onclick="currentSlide(3)" alt="3 / 6" id="imgs">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-fuel.jpg" style="width:200px" height="125px" onclick="currentSlide(4)" alt="4 / 6" id="imgs">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-staffs.jpg" style="width:200px" height="125px" onclick="currentSlide(5)" alt="5 / 6" id="imgs">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="imgs/gallery-distribution.jpg" style="width:200px" height="125px" onclick="currentSlide(6)" alt="6 / 6" id="imgs">
+              </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+</body>
+</html>
